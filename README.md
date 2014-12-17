@@ -1,3 +1,3 @@
-a website that illustrate cafe products
+a website that illustrates cafe products
 -----
 exercises
