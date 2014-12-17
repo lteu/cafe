@@ -30,6 +30,7 @@
 
 
   <style>
+
   #headimg{
     height: 130px;
   }
@@ -41,7 +42,11 @@
     margin-left: 6px;
   }
   .nav  li {
-    font-size: 15px;
+    font-size: 20px;
+  }
+  .head h1{
+    padding-top: 20px;
+    color: rgb(247,245,240);
   }
 
   </style>
@@ -50,34 +55,36 @@
 <body >   
   <div class='container'>
     <div class="head clearfix">
-
-      <h3 class="brand"><a href="http://unibo.it" target='_blank'><img src='public/img/logo.png' /></a></h3>
-
-      <h1 class='text-center'>￼点点滴滴 净化心灵 卡奇诺咖 </h1>
-      <ul class="nav">
-        <li><a href=".">主页</a></li>
-        <li><a href="about">关于卡奇诺</a></li>
-        <li><a href="products">产品类型</a></li>
-        <li><a href="factory">我们的工厂</a></li>
-        <li><a href="talk">咖啡与健康</a></li>
-        <li><a href="contact">联系我们</a></li>
-      </ul>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <h3 class="brand"><a href="http://unibo.it" target='_blank'><img src='public/img/logo.png' /></a></h3>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9">
+              <h1 class='text-center'>点点滴滴 净化心灵 卡奇诺咖</h1>
+              <ul class="nav text-center">
+                <li><a href=".">主页</a></li>
+                <li><a href="about">关于卡奇诺</a></li>
+                <li><a href="products">产品类型</a></li>
+                <li><a href="factory">我们的工厂</a></li>
+                <li><a href="talk">咖啡与健康</a></li>
+                <li><a href="contact">联系我们</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
     </div>
     <div class="content ">
       <?php echo $content; ?>
   </div>
 
 
-<div id="footer">
-  <div class="container">
-    <div class="text-muted pull-left">
-      Copyright 2014 Tutti i diritti riservati | P.IVA 03384021204 | 
-    <br/>
-      Kaccino s.r.l.s - Via Ferrarese 209/3, 40128 Bologna
-￼￼￼￼￼</div>
-  </div>
+<div id="footer" class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+          Kaccino s.r.l.s - Via Ferrarese 209/3, 40128 Bologna - P.IVA 03384021204  | 
+          Copyright © 2014 Tutti i diritti riservati | Credits
+    </div>
 </div>
-
 
 <script src="js/load.js"></script> 
 
