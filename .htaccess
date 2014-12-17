@@ -1,0 +1,8 @@
+RewriteEngine on
+
+RewriteBase /cafe/
+
+
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^(.*)$ index.php/?/$1 [NC,L,QSA]  
+
