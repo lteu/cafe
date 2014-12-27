@@ -17,8 +17,10 @@ require_once 'lib/limonade.php';
 //show portal page
 dispatch('/', 'page_portal');
 function page_portal() {
-    return render('portal.html.php', 'layout/default.html.php');
+    return render('portal.html.php', 'layout/default2.html.php');
 }
+
+
 
 dispatch('/about', 'page_about');
 function page_about() {
