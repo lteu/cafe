@@ -1,12 +1,18 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Home</title>
+
+  <title><?php echo $title; ?></title>
+  <meta name='Description' content=<?php echo $description; ?> />
+  <meta name='Keywords' content=<?php echo $keywords; ?> />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="shortcut icon" href="favicon.png">
+
   <link href="./public/css/style.css" rel="stylesheet" type="text/css"  media="all" />
   <link href="./public/css/slider.css" rel="stylesheet" type="text/css"  media="all" />
-  <link href="./public/css/bootstrapaa.css" rel="stylesheet" type="text/css"  media="all" />
+  <link href="./public/css/bootstrapino.css" rel="stylesheet" type="text/css"  media="all" />
 
   <script type="text/javascript" src="./public/js/lib/jquery-1.7.2.min.js"></script>
   <script type="text/javascript" src="./public/js/lib/jquery.cookie.js"></script>
@@ -44,12 +50,22 @@
     margin: auto;
     width: 87%;
   }
+  .nav-wrap{
+    text-align:center;
+    padding:15px 0px;
+    background:url(./public/images/bg.png);
+  }
+  .content-wrap{
+    margin-top: 30px;
+  }
   </style>
 
 </head>
 <body>
 
+  <div class="nav-wrap">
   <nav class="navbar navbar-default" role="navigation">
+    
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <a class="navbar-brand" href="#" target='_blank'><img class='navimg' src='public/img/logo.png' /></a>
@@ -58,33 +74,24 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
 
       <ul class="nav navbar-nav">
-        <li><a href=".">主页</a></li>
-        <li><a href="about">关于卡奇诺</a></li>
-        <li><a href="products">产品类型</a></li>
-        <li><a href="factory">我们的工厂</a></li>
-        <li><a href="talk">咖啡与健康</a></li>
-        <li><a href="contact">联系我们</a></li>
+        <li><a class="lihome" href=".">主页</a></li>
+        <li><a class="liabout" href="about">关于卡奇诺</a></li>
+        <li><a class="liprod" href="products">产品类型</a></li>
+        <li><a class="lifact" href="factory">我们的工厂</a></li>
+        <li><a class="lihealth" href="talk">咖啡与健康</a></li>
+        <li><a class="licontact" href="contact">联系我们</a></li>
       </ul>
     
     <!-- /.navbar-collapse -->
   </nav>
+</div>
   <div class="clearfix" />
   
 
-  <!------ Slider ------------>
-  <div class="slider">
-    <div class="slider-wrapper theme-default">
-      <div id="slider" class="nivoSlider">                  
-        <img src="./public/images/slider-2.jpg" data-thumb="images/slider-2.jpg" alt="" />
-        <img src="./public/images/slider-3.jpg" data-thumb="images/slider-3.jpg" alt="" />
-        <img src="./public/images/slider-4.jpg" data-thumb="images/slider-4.jpg" alt="" />
-        <img src="./public/images/slider-1.jpg" data-thumb="images/slider-1.jpg" alt="" />
-      </div>
-    </div>
-  </div>
-  <!------End Slider ------------>
 
+<div class="content-wrap">
 <?php echo $content; ?>
+</div>
             
 <!---End-content---->
 <!---start-footer----> 
