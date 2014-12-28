@@ -65,7 +65,7 @@
 
   <div class="nav-wrap">
   <nav class="navbar navbar-default" role="navigation">
-    
+
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <a class="navbar-brand" href="#" target='_blank'><img class='navimg' src='public/img/logo.png' /></a>

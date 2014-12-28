@@ -7,6 +7,7 @@
 @media (max-width: 760px) {
   .navbar-header{
     /*display: none;*/
+    margin-left: 35%;
   }
 }
 
